@@ -43,7 +43,7 @@ public class BookController {
         return repository.save(bookToUpdate);
     }
 
-    @DeleteMapping("{id}")
+    @DeleteMapping("/{id}")
     public boolean delete(@PathVariable int id){
         repository.deleteById(id);
         return true;
